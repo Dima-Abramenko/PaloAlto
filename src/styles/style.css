@@ -65,7 +65,8 @@ a {
     border-bottom-color: #5c6bc0;
 }
 .navigation__ref_theme_black:active{
-    border-bottom-color: #5c6bc0;
+    color: #5c6bc0;
+    border: none;
 }
 .navigation__ref_theme_white {
     font-size: 16px;
@@ -82,7 +83,7 @@ a {
 .container {
      margin-bottom: 100px;
 }
-.article {
+.content {
     background-color: #ffffff;
     box-shadow: 0px 0px 25px 0.00px rgba(0, 0, 0, 0.1);
     padding-top: 20px;
@@ -96,7 +97,7 @@ a {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    padding: 10px;
+    padding: 10px 20px;
     background-color: #5c6bc0;
     color: #ffffff;
     float: right;
@@ -104,12 +105,11 @@ a {
     right: -10px;
 }
 .content__i-do-ref:hover {
-     padding: 15px;
-    background-color: #5b3aa0;
+    background: #6B78C5;
+    padding: 12px 22px;
 }
 .content__i-do-ref:active {
-     padding: 15px;
-    background-color: #5c6bc0;
+    background: #525FAB;
 }
 .content__date {
     font-family: Lato-Bold, 'Lato', sans-serif;
@@ -161,16 +161,16 @@ a {
     color: #5c6bc0;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 15px;
+    padding: 15px 25px;
 }
 .content__read-more-ref:hover {
     border: 1px solid;
-    padding: 14px;
+    padding: 14px 24px;
     border-color: rgba(0, 0, 0, 0.1);
 }
 .content__read-more-ref:active {
     border: 1px solid;
-    padding: 14px;
+     padding: 14px 24px;
     border-color: blue;
 }
 .content__header-с {
@@ -214,23 +214,23 @@ input, textarea, button {
     color: rgba(51, 51, 51, 0.3);
     font-weight: 400;
     background-color: #f7f9fc;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
 }
 .form-contact__name {
-    width: 340px;
-    margin-right: 20px;
+    width: 320px;
+    margin-right: 40px;
 }
 .form-contact__email {
-    width: 340px;
+    width: 325px;
 }
 .form-contact__subject {
     margin-left: 6px;
     width: 726px;
     display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 .form-contact__message {
     margin-left: 6px;
