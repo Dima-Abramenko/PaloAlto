@@ -1,0 +1,26 @@
+{
+  "name": "paloalto",
+  "version": "1.0.0",
+  "description": "simple site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Dima-Abramenko/PaloAltoGulp.git"
+  },
+  "author": "Dmitry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dima-Abramenko/PaloAltoGulp/issues"
+  },
+  "homepage": "https://github.com/Dima-Abramenko/PaloAltoGulp#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-image": "^2.7.2",
+    "gulp-nunjucks": "^2.3.0"
+  }
+}

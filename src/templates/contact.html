@@ -1,32 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:700i" rel="stylesheet">
-    <link href="../styles/style.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
-    <title>Palo Alto</title>
-  </head>
-  <body>
-      <!---------------------------------Header-Block--------------------------------->
-  <header class="header">
-        <span class="logo">
-             <a class="logo__ref" href="../templates/index.html"><img src="../images/header/logo.png"></a>
-        </span>
-        <nav class="nav">
-            <ul class="navigation">
-                <li class="navigation__item  navigation__ref_theme_black"><a class="navigation__ref navigation__ref_theme_black" href="../templates/index.html">home</a></li>
-                <li class="navigation__item"><a class="navigation__ref navigation__ref_theme_black" href="#">about</a></li>
-                <li class="navigation__item"><a class="navigation__ref navigation__ref_theme_black" href="#">archive</a></li>
-                <li class="navigation__item"><a class="navigation__ref navigation__ref_theme_black" href="../templates/contact.html">contact</a></li>
-                <li class="navigation__item"><a class="navigation__search-h" href="#"><em class="fa fa-search"></em></a></li>
-            </ul>
-        </nav>
-    </header>
+{% extends "layout.html" %}
+
+{% block main %}
     <main class="main">
         <div class="container">
             <article class="article">
@@ -45,28 +19,4 @@
         </article>
         </div>
     </main>
-      <!---------------------------------End-Main--------------------------------->
-        <footer class="footer">
-          <div class="footer-content">
-          <div class="footer-heder"> <a class="footer-header__ref" href="#">Palo Alto</a></div>
-        <div class="footer-nav">
-            <ul class="navigation">
-                <li class="navigation__item"><a class="navigation__ref navigation__ref_theme_white" href="../templates/index.html">home</a></li>
-                <li class="navigation__item"><a class="navigation__ref navigation__ref_theme_white" href="#">about</a></li>
-                <li class="navigation__item"><a class="navigation__ref navigation__ref_theme_white" href="#">archive</a></li>
-                <li class="navigation__item"><a class="navigation__ref navigation__ref_theme_white" href="../templates/contact.html">contact</a></li>
-                <li class="navigation__item"><a class="navigation__search-f navigation__ref_theme_white" href="#"><em class="fa fa-search"></em></a></li>
-            </ul>  
-        </div>
-        <div class="footer__text">Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor.</div>
-        <div class="footer__copyright">&copy; 2015 - Palo Alto. All Rights Reserved. Designed & Developed by <a class="team-name" href="#">PixelBuddha Team</a> </div>
-        <div class="share-icons">
-            <span><a class="share-icons__item" href="#"><em class="fa fa-facebook-square fa-lg"></em></a></span>
-            <span><a class="share-icons__item" href="#"><em class="fa fa-twitter fa-lg"></em></a></span>
-            <span><a class="share-icons__item" href="#"><em class="fa fa-instagram fa-lg"></em></a></span>
-            <span><a class="share-icons__item" href="#"><em class="fa fa-pinterest fa-lg"></em></a></span>
-          </div>
-          </div>
-      </footer>
-  </body>
-</html>
+{% endblock %}
