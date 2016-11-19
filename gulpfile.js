@@ -1,13 +1,12 @@
 var gulp = require('gulp');
 var nunjucks = require('gulp-nunjucks');
 var concat = require('gulp-concat');
+const image = require('gulp-image');
 var browserSync = require('browser-sync').create();
-//var image = require('gulp-image');
 
 var path = {
     css:  'src/styles/*.css',
     html: 'src/templates/*.html',
-    images: 'src/images/**/*',
     dist: {
       css:  'dist/styles/',
       html: 'dist/'
@@ -27,20 +26,19 @@ gulp.task('html', function () {
     .pipe(nunjucks.compile())
     .pipe(gulp.dest(path.dist.html));
 });
-/*
+
 gulp.task('image', function () {
-  return gulp.src(path.images)
+  gulp.src('src/images/*')
     .pipe(image())
     .pipe(gulp.dest('./dest'));
 });
-*/
-gulp.task('build', ['html', 'css']);
+
+gulp.task('build', ['html', 'css', 'image']);
 
 
 gulp.task('watch', function () {
   gulp.watch(path.css, ['css']);
   gulp.watch(path.html, ['html']);
-  //gulp.watch(path.image, ['images']);
     
 });
 
