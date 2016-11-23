@@ -28,12 +28,15 @@ gulp.task('html', function () {
 });
 
 gulp.task('image', function () {
-  gulp.src('src/images/*')
+  gulp.src('src/images/**/*')
     .pipe(image())
-    .pipe(gulp.dest('./dest'));
+    .pipe(gulp.dest('./dist/image/'));
 });
-
-gulp.task('build', ['html', 'css', 'image']);
+gulp.task('font-css', function () {
+   gulp.src('src/font-awesome-4.7.0/**/*')
+    .pipe(gulp.dest('./dist/font-awesome/'))
+});
+gulp.task('build', ['html', 'css', 'image', 'font-css']);
 
 
 gulp.task('watch', function () {
