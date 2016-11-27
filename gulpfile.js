@@ -9,7 +9,8 @@ var browserSync = require('browser-sync').create();
 var path = {
     css:  'src/styles/*.css',
     html: 'src/templates/*.html',
-    dist: {
+	
+      dist: {
       css:  'dist/styles/',
       html: 'dist/'
     }
@@ -47,12 +48,18 @@ gulp.task('image', function () {
     .pipe(image())
     .pipe(gulp.dest('./dist/image/'));
 });
-gulp.task('font', function () {
+
+gulp.task('icon', function () {
    gulp.src('src/font-awesome-4.7.0/**/*')
     .pipe(gulp.dest('./dist/font-awesome/'))
 });
-gulp.task('build', ['html', 'css', 'image', 'font']);
-gulp.task('prod', ['html', 'css-min', 'image', 'font']);
+
+gulp.task('font', function() {
+	gulp.src('src/fonts/*.ttf')
+	.pipe(gulp.dest('./dist/fonts/'))
+});
+gulp.task('build', ['html', 'css', 'image', 'icon', 'font']);
+gulp.task('prod', ['html', 'css-min', 'image', 'icon', 'font']);
 
 
 gulp.task('watch', function () {

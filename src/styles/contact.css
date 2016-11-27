@@ -1,0 +1,53 @@
+input, textarea, button {
+   border: none;
+}
+.form-contact__input {
+    font-family: Lato-Regular, 'Lato', sans-serif;
+    font-size: 20px;
+    color: rgba(51, 51, 51, 0.3);
+    font-weight: 400;
+    background-color: #f7f9fc;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+}
+.form-contact__name {
+    width: 320px;
+    margin-right: 40px;
+}
+.form-contact__email {
+    width: 325px;
+}
+.form-contact__subject {
+    margin-left: 6px;
+    width: 726px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.form-contact__message {
+    margin-left: 6px;
+    width: 726px;
+    height: 150px;
+    display: block;
+}
+.form-contact__button {
+    display: block;
+    font-family: Lato;
+    font-size: 24px;
+    background-color: #ffffff;
+    color: #5c6bc0;
+    font-weight: 700;
+    padding: 15px;
+    text-transform: uppercase;
+}
+.form-contact__button:hover {
+    border: 1px solid;
+    padding: 14px;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+.form-contact__button:active {
+    border: 1px solid;
+    padding: 14px;
+    border-color: blue;
+}
