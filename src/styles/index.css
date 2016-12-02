@@ -1,3 +1,4 @@
+
 .main {
     margin: 0 auto;
     width: 952px;
@@ -34,7 +35,7 @@
     background: #525FAB;
 }
 .content__date {
-    font-family: Lato-Bold, 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
     padding-top: 50px;
     padding-bottom: 20px;
     font-size: 14px;
@@ -42,7 +43,7 @@
     font-weight: 700;
 }
 .content__header {
-    font-family: Lato-Bold, 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 40px;
     color: #000000;
     font-weight: 700;
@@ -57,21 +58,21 @@
     margin-bottom: 30px;
 }
 .content__text_theme_simple {
-    font-family: Lato-Regular, 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 17px;
 	line-height: 1.8;
     color: rgba(0, 0, 0, 0.8);
     font-weight: 400;
 }
 .content__text_theme_italic {
-    font-family: Lato-BoldItalic, 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 25px;
     color: rgba(0, 0, 0, 0.5);
     font-style: italic;
     font-weight: normal;
 }
 .content__text_theme_blockquote {
-    font-family: Lato-Regular, 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 20px;
     color: rgba(0, 0, 0, 0.4);
     font-weight: 400;
@@ -79,7 +80,7 @@
     padding-left: 20px;
 }
 .content__read-more-ref {
-    font-family: Lato-Bold, 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 21px;
     color: #5c6bc0;
     font-weight: 700;
@@ -97,7 +98,7 @@
     border-color: blue;
 }
 .content__header-с {
-    font-family: Lato-Bold, 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 40px;
     color: #000000;
     font-weight: 700;
@@ -113,7 +114,7 @@
     margin-left: 5px; 
 }
 .hashtags__item-ref {
-    font-family: Lato-Regular, 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 15px;
     color: rgba(0, 0, 0, 0.3);
     font-weight: 400;
@@ -127,4 +128,79 @@
 }
 .content__aside-image {
     float: left;
+}
+@media screen and (max-width : 1024px) {
+	body {
+		width: 100%;
+	}
+	.main {
+		width: auto;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+@media screen and (max-width : 768px) {
+	
+	.article__image {
+		display: none;
+	}
+	.content {
+		padding-top: 20px;
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-bottom: 30px;
+	}
+	.content__date {
+    	padding-top: 20px;
+    	padding-bottom: 10px;
+    	font-size: 14px;
+	}
+	.content__header {
+    	font-size: 25px;
+    	font-weight: 700;
+	}
+	.content__text {
+    	padding-bottom: 0px;
+	}
+}
+@media screen and (max-width : 480px) {
+	.content__i-do-ref {
+    	right: 0px;
+		top: 0px;
+	}
+	.content__read-more-ref {
+    	font-size: 21px;
+		padding: 0;
+	}
+	.content__read-more-ref:hover {
+    	border: 1px solid;
+    	padding: 0;
+	}
+	.content__read-more-ref:active {
+    	border: 1px solid;
+     	padding: 0;
+    	border-color: blue;
+	}
+	.hashtags {
+		margin-top: 15px;
+    	margin-bottom: 10px;
+		margin-left: -40px;
+		float: none;
+	}
+	.hashtags__item {
+		padding-left: 0;
+    	margin-left: 0; 
+	}
+}
+@media screen and (max-width : 425px) {
+
+}
+@media screen and (max-width : 375px) {
+	
+}
+@media screen and (max-width : 320px) {
+	.article__image {
+		display: none;
+	}
+	
 }

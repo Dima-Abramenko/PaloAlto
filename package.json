@@ -23,6 +23,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.1.7",
     "gulp-image": "^2.7.2",
+    "gulp-less": "^3.3.0",
     "gulp-nunjucks": "^2.3.0"
   }
 }

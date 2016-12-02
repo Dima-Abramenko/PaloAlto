@@ -9,7 +9,6 @@ var browserSync = require('browser-sync').create();
 var path = {
     css:  'src/styles/*.css',
     html: 'src/templates/*.html',
-	
       dist: {
       css:  'dist/styles/',
       html: 'dist/'
@@ -36,7 +35,6 @@ gulp.task('css-min', function () {
     .pipe(cssmin())
     .pipe(gulp.dest(path.dist.css));
 });
-
 gulp.task('html', function () {
   return gulp.src(path.html)
     .pipe(nunjucks.compile())
