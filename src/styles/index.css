@@ -1,7 +1,10 @@
+body {
+  position: relative;
+}
 
 .main {
-    margin: 0 auto;
-    width: 952px;
+  margin: 0 auto;
+  width: 952px;
 }
 .container {
      margin-bottom: 100px;

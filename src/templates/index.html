@@ -1,38 +1,42 @@
 {% extends "layout.html" %}
 
 {% block main %}
+ 
 <main class="main">
-	<div class="container">
-		<article class="article">
-			<div class="content">
-				<span>
-					<a class="content__i-do-ref" href="#">I Do Travel</a>
-				</span>
-				<div class="content__date">Sep 20</div>
-				<h1 class="content__header">No difference how many peaks you reach if there was no pleasure in the climb.</h1>
-				<hr class="content__hr">
-				<div class="content__text content__text_theme_simple">Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.</div>
-				<span><a class="content__read-more-ref" href="#">read more</a></span>
-				<ul class="hashtags">
-					<li class="hashtags__item"><a class="hashtags__item-ref" href="#">#Yosemite</a></li>
-					<li class="hashtags__item"><a class="hashtags__item-ref" href="#">#Peak</a></li>									<li class="hashtags__item"><a class="hashtags__item-ref" href="#">#Explorer</a></li>
-				</ul>
-			</div>
-		</article>
-		<article class="article">
-			<div class="article__image">
-			    <picture>
-					 <source media="(min-width: 952px)"
-     						 srcset="./image/body/img.jpeg,
-             				 ./image/body/img@2x.jpg 2x">
+  <div class="container">
+    <div class="js-articles">
+      <!--Выгрузка из json-->  
+      </div>
+    <article class="article">
+      <div class="content">
+        <span>
+          <a class="content__i-do-ref" href="#">I Do Travel</a>
+        </span>
+        <div class="content__date">Sep 20</div>
+        <h1 class="content__header">No difference how many peaks you reach if there was no pleasure in the climb.</h1>
+        <hr class="content__hr">
+        <div class="content__text content__text_theme_simple">Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.</div>
+        <span><a class="content__read-more-ref" href="#">read more</a></span>
+        <ul class="hashtags">
+          <li class="hashtags__item"><a class="hashtags__item-ref" href="#">#Yosemite</a></li>
+          <li class="hashtags__item"><a class="hashtags__item-ref" href="#">#Peak</a></li>									<li class="hashtags__item"><a class="hashtags__item-ref" href="#">#Explorer</a></li>
+        </ul>
+      </div>
+    </article>
+    <article class="article">
+      <div class="article__image">
+        <picture>
+          <source media="(min-width: 952px)"
+                  srcset="./image/body/img.jpeg,
+                          ./image/body/img@2x.jpg 2x">
 					<img class="image" src="./image/body/img.jpeg"
 						 srcset="./image/body/img@2x.jpg 2x" 
 						 width="952" 
 						 height="533" 
 						 alt="mountains">
-				</picture>
-			</div>
-			<div class="content">
+				  </picture>
+			 </div>
+			 <div class="content">
 				<span><a class="content__i-do-ref" href="#">I Do Observe</a></span>
 				<div class="content__date">Sep 18</div>
 				<h1 class="content__header">You know, I'd rather argue with you, then laugh with anyone else.</h1>
