@@ -1,7 +1,6 @@
 body {
   position: relative;
 }
-
 .main {
   margin: 0 auto;
   width: 952px;
@@ -114,7 +113,7 @@ body {
 }
 .hashtags__item {
     display: inline;
-    margin-left: 5px; 
+    margin-left: 5px;
 }
 .hashtags__item-ref {
     font-family: 'Lato', sans-serif;
@@ -199,7 +198,7 @@ body {
 	}
 	.hashtags__item {
 		padding-left: 0;
-    	margin-left: 0; 
+    	margin-left: 0;
 	}
 }
 @media screen and (max-width : 425px) {
@@ -216,5 +215,5 @@ body {
 	.image {
 		height: 162px;
 	}
-	
+
 }

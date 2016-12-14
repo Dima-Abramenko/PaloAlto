@@ -1,4 +1,4 @@
-var isCurrentRef = function() { 
+var isCurrentRef = function() {
   var $ref = $('.navigation__ref');
  if (window.location.pathname == '/' || window.location.pathname == '/index.html') {
    $ref.addClass(".navigation__ref-current");

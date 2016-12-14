@@ -1,6 +1,6 @@
 
-var nunjScript = function() { 
-  
+var nunjScript = function() {
+
   nunjucks.configure({
     autoescape: true,
     web: {
@@ -11,7 +11,7 @@ var nunjScript = function() {
     url: "./mockapi/content.json",
     success: function(data, status, xhr) {
       for (item in data.articles) {
-        nunjucks.render('./partials/article.html', data.articles.item, function (err, res) {
+        nunjucks.render('./partials/article.html', data.articles[item], function (err, res) {
           $('.js-articles').append(res);
           console.log("Success");
         });
@@ -23,4 +23,3 @@ var nunjScript = function() {
   });
 };
 $(document).ready(nunjScript);
-
