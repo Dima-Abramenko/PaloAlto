@@ -28,6 +28,7 @@ a {
   padding: 20px;
   background-color: blueviolet;
   box-sizing: border-box;
+  background-color: #252b4d;
 }
 .menuform {
   padding-bottom: 20px;
@@ -37,14 +38,14 @@ a {
   display: inline;
   width: 100px;
   padding: 15px;
-  background-color: blueviolet;
+  background-color: #252b4d;
   text-transform: uppercase;
 }
 .menuform__search {
-  
+  color: #fff;
 }
 .menu-content {
-  
+
 }
 .menu-nav {
   padding: 15px;
@@ -54,14 +55,19 @@ a {
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
   margin-bottom: 20px;
+
 }
 .menu-nav__href {
   text-decoration: none;
+  color: #babcc7;
+}
+..menu-nav__href: active {
+  color: #a9afdb;
 }
 .menu-content__header {
   font-family: 'Lato', sans-serif;
   font-size: 36px;
-  color: rgba(0, 0, 0, 0.2);
+  color: #fff;
   font-style: italic;
   font-weight: 700;
 }
@@ -70,6 +76,9 @@ a {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.4);
   font-weight: 400;
+}
+.menu__team {
+  color: #767a8f;
 }
 .icon-menu {
   margin: 0;
@@ -84,7 +93,7 @@ a {
 }
 .navigation__item  {
     display: inline;
-    margin-left: 25px; 
+    margin-left: 25px;
     line-height: 25px;
 }
 .navigation__ref {
@@ -133,7 +142,7 @@ a {
     padding-right: 10%;
     padding-top: 50px;
     padding-bottom: 50px;
-    
+
 }
 .footer-header__ref {
     font-family: 'Lato', sans-serif;
@@ -188,14 +197,14 @@ a {
     margin-bottom: 10px;
 }
 .share-icons__item:hover {
-    background-color: rgba(0, 0, 0, 0.1);  
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (max-width : 1024px) {
 	.header {
 		width: 90%;
 	}
- 
+
 	.footer {
 		width: auto;
     	padding-left:  50px;
@@ -211,7 +220,7 @@ a {
 	}
 }
 @media screen and (max-width : 768px) {
-	
+
 }
 @media screen and (max-width : 681px) {
   .nav {
@@ -228,7 +237,7 @@ a {
 	.nav {
 		display: none;
 	}
-		
+
 	.navigation__item {
 		margin-left: 10px;
 	}

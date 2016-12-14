@@ -2,10 +2,10 @@
 	"success": true,
 	"articles": [{
 		"mainimage": "",
-		"buttonIdo" : "I Do Travel",
+		"buttonIdo": "I Do Travel",
 		"date": "sep 20",
 		"header": "No difference how many peaks you reach if there was no pleasure in the climb.",
-		"asideimage" : "",
+		"asideimage": "",
 		"paragraph1": "",
 		"paragraph2": "",
 		"paragraph3": "",
@@ -17,10 +17,10 @@
 		]
 	}, {
 		"mainimage": "./image/body/img.jpeg",
-		"buttonIdo" : "I Do Observe",
+		"buttonIdo": "I Do Observe",
 		"date": "sep 18",
 		"header": "You know, I'd rather argue with you, then laugh with anyone else.",
-		"asideimage" : "",
+		"asideimage": "",
 		"paragraph1": "Curabitur luctus placerat lorem id eleifend. Nulla ac lacus finibus, tempor velit hendrerit, vulputate lacus. Nunc fermentum nunc sem, ac eleifend tellus cursus nec. Donec a euismod est, vitae accumsan purus. Proin aliquet ex massa, ac finibus magna commodo vitae.",
 		"paragraph2": "Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.",
 		"paragraph3": "Sed sagittis commodo dolor. Vivamus elementum sem sed sapien bibendum viverra. Curabitur semper scelerisque turpis eu ullamcorper. Morbi tincidunt auctor orci id consequat. Nulla odio mi, iaculis id congue quis, euismod id nisi. In varius congue diam, et viverra lorem bibendum ut.",
@@ -32,10 +32,10 @@
 		]
 	}, {
 		"mainimage": "",
-		"buttonIdo" : "I Do Reflect",
+		"buttonIdo": "I Do Reflect",
 		"date": "sep 11",
 		"header": "Democracy means simply the bludgeoning of the people by the people for the people.",
-		"asideimage" : "./image/body/img-figure.jpeg",
+		"asideimage": "./image/body/img-figure.jpeg",
 		"paragraph1": "",
 		"paragraph2": "Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.",
 		"paragraph3": "Mauris sem odio, rhoncus eget euismod sed, pellentesque sit amet felis. Praesent dictum eleifend dui et efficitur. Nunc non orci in neque sodales semper. Etiam euismod volutpat lorem, vestibulum malesuada justo aliquet eget. Nunc lacus ante, varius a euismod eu, finibus commodo erat. Curabitur tincidunt sit amet nunc id interdum. Aliquam augue nisi, venenatis vitae ex at, lobortis fringilla nibh. Proin placerat enim vitae egestas eleifend. Aliquam quis orci dignissim, posuere nibh a, eleifend augue. Cras quis metus nec tortor aliquet ullamcorper. Quisque varius porta metus, ut maximus dolor euismod nec. Suspendisse sit amet feugiat turpis.",

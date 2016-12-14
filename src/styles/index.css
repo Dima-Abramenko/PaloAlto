@@ -148,7 +148,7 @@ body {
 @media screen and (max-width : 768px) {
 
 	.image {
-		height: 421px;
+		height: 410px;
 	}
 	.content {
 		padding-top: 20px;
@@ -203,17 +203,16 @@ body {
 }
 @media screen and (max-width : 425px) {
 	.image {
-		height: 221px;
+		height: 216px;
 	}
 }
 @media screen and (max-width : 375px) {
 	.image {
-		height: 194px;
+		height: 189px;
 	}
 }
 @media screen and (max-width : 320px) {
 	.image {
-		height: 162px;
+		height: 157px;
 	}
-
 }
