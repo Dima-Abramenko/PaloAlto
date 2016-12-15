@@ -14,7 +14,8 @@ var path = {
     partials: 'src/templates/partials/*.html',
     mock: 'src/mockapi/*.json',
     vendor: {
-      css: 'src/vendor/css/*.css'  
+      css: 'src/vendor/css/*.css',
+      js: 'src/vendor/css/*.js'
     },
       dist: {
       css:  'dist/styles/',
@@ -95,6 +96,19 @@ gulp.task('vendor-css-min', function () {
     .pipe(gulp.dest(path.dist.vendor));
 });
 
+gulp.task('vendor-js', function () {
+  return gulp.src(path.vendor.js)
+    .pipe(concat('vendor.js'))
+    .pipe(gulp.dest(path.dist.vendor));
+});
+
+gulp.task('vendor-js-min', function () {
+  return gulp.src(path.vendor.js)
+    .pipe(concat('vendor.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest(path.dist.vendor));
+});
+
 gulp.task('icon', function () {
    gulp.src('src/font-awesome-4.7.0/**/*')
     .pipe(gulp.dest('./dist/font-awesome/'))
@@ -105,8 +119,8 @@ gulp.task('font', function() {
 	.pipe(gulp.dest('./dist/fonts/'))
 });
 
-gulp.task('build', ['html', 'partials', 'css', 'js', 'vendor-css', 'image', 'icon', 'font', 'mock']);
-gulp.task('prod', ['html', 'partials', 'css-min', 'js-min', 'vendor-css-min', 'image', 'icon', 'font', 'mock']);
+gulp.task('build', ['html', 'partials', 'css', 'js', 'vendor-css','vendor-js', 'image', 'icon', 'font', 'mock']);
+gulp.task('prod', ['html', 'partials', 'css-min', 'js-min', 'vendor-css-min', 'vendor-js-min', 'image', 'icon', 'font', 'mock']);
 
 
 gulp.task('watch', function () {
@@ -116,7 +130,7 @@ gulp.task('watch', function () {
   gulp.watch(path.partials, ['partials']);
   gulp.watch(path.vendor.css, ['vendor-css']);
   gulp.watch(path.mock, ['mock']);
-    
+
 });
 
 gulp.task('serve', ['watch'], function() {
