@@ -9,13 +9,10 @@ var nunjScript = function() {
   });
   $.ajax({
     url: "./mockapi/content.json",
-    success: function(data, status, xhr) {
-      for (item in data.articles) {
-        nunjucks.render('./partials/article.html', data.articles[item], function (err, res) {
-          $('.js-articles').append(res);
-          console.log("Success");
-        });
-      }
+    success: function(data, status) {
+        nunjucks.render('./partials/article.html', data, function (err, res) {
+            $('.js-articles').append(res);      
+        });        
     },
     error: function(data, status){
       alert('**Parsing has not occurred**');

@@ -1,66 +1,41 @@
-{% extends "layout.html" %}
-
-{% block main %}
+{% extends "layout.html" %} {% block main %}
 
 <main class="main">
-  <div class="container">
-    <article class="article">
-      <div class="content">
-        <div class="content__header-с">Contact Us</div>
-        <hr class="content__hr">
-        <form class="form-about">
-          <label class="form-about__label" for "ab-fname">First Name</label>
-          <input class="form-about__input"
-          id="ab-fname"
-          name="firstname"
-          autofocus placeholder="Jhon"
-          tabindex="1">
+    <div class="container">
+        <article class="article">
+            <div class="content">
+                <div class="content__header-с">Contact Us</div>
+                <hr class="content__hr">
+                <form class="form-about" id="ab-form" name="ab-form">
+                    <label class="form-about__label" for "ab-fname">First Name</label>
+                    <span class="error-firstname"></span>
+                    <input class="form-about__input" id="ab-fname" name="firstname" autofocus placeholder="Jhon" tabindex="1">
 
-          <label class="form-about__label" for "ab-lname">Last Name</label>
-          <input class="form-about__input"
-          id="ab-lname"
-          name="lastname"
-          placeholder="Doe"
-          tabindex="2">
+                    <label class="form-about__label" for "ab-lname">Last Name</label>
+                    <span class="error-lastname"></span>
+                    <input class="form-about__input" id="ab-lname" name="lastname" placeholder="Doe" tabindex="2">
 
-          <label class="form-about__label" for "ab-mail">E-mail</label>
-          <input class="form-about__input"
-          id="ab-mail"
-          name="mail"
-          placeholder=""
-          tabindex="3">
+                    <label class="form-about__label" for "ab-mail">E-mail</label>
+                    <span class="error-mail"></span>
+                    <input class="form-about__input" id="ab-mail" name="mail" placeholder="" tabindex="3">
 
-          <label class="form-about__label" for "ab-phone">Phone</label>
-          <input class="form-about__input"
-          id="ab-phone"
-          name="phone"
-          placeholder=""
-          tabindex="4">
+                    <label class="form-about__label" for "ab-phone">Phone</label>
+                    <span class="error-phone"></span>
+                    <input data-inputmask="'mask': '+9(999)-999-99-99'" class="form-about__input" id="ab-phone" name="phone" placeholder="" tabindex="4">
 
-          <label class="form-about__label" for "ab-date">Date of Birth</label>
-          <input class="form-about__input"
-          id="ab-date"
-          name="date"
-          placeholder=""
-          tabindex="5">
+                    <label class="form-about__label" for "ab-date">Date of Birth</label>
+                    <span class="error-date"></span>
+                    <input class="form-about__input" id="ab-date" name="date" placeholder="" tabindex="5">
 
-          <label class="form-about__label" for "sex">Sex</label>
-          <input class="form-about__radio"
-          type="radio"
-          name="sex"
-          value="male"
-          checked> Male
-          <input class="form-about__radio"
-          type="radio"
-          name="sex"
-          value="female"> Female
+                    <label class="form-about__label" for "sex">Sex</label>
+                    <input class="form-about__radio" type="radio" name="sex" value="male" checked> Male
+                    <input class="form-about__radio" type="radio" name="sex" value="female"> Female
 
-
-
-        </form>
-      </div>
-    </article>
-	</div>
+                    <button class="form-about__button" onclick="return validate()" type="submit">submit</button>
+                </form>
+            </div>
+        </article>
+    </div>
 </main>
 
 {% endblock %}

@@ -1,0 +1,33 @@
+.error-firstname {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: red;
+}
+
+.form-about__input_theme-error {
+    border-color: red;
+}
+
+.error-lastname {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: red;
+}
+
+.error-mail {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: red;
+}
+
+.error-phone {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: red;
+}
+
+.error-date {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: red;
+}

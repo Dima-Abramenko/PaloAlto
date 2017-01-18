@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="PaloAlto, Adventure">
     <meta name="description" content="The great PaloAlto's blog about his adventures">
-    <link rel="shortcut icon" type="image/png" href="./image/icon/icon.png" sizes="32x32"/>
+    <link rel="shortcut icon" type="image/png" href="./image/icon/icon.png" sizes="32x32" />
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:700i" rel="stylesheet">
@@ -14,33 +15,34 @@
     <link href="./styles/style.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
     <title>Palo Alto</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="menu">
 
         <form class="menuform">
-           <input class="menuform-contact__input" id="1" name="search" autofocus placeholder="search" tabindex="1">
-           <span class="menuform__search"><em class="fa fa-search"></em></span>
+            <input class="menuform-contact__input" id="1" name="search" autofocus placeholder="search" tabindex="1">
+            <span class="menuform__search"><em class="fa fa-search"></em></span>
         </form>
-      <div class="menu-content">
-        <ul class="menu-nav">
-        <li class="menu-nav__item"><a class="menu-nav__href" href="index.html">home</a></li>
-        <li class="menu-nav__item"><a class="menu-nav__href" href="about.html">about</a></li>
-        <li class="menu-nav__item"><a class="menu-nav__href" href="#">archive</a></li>
-        <li class="menu-nav__item"><a class="menu-nav__href" href="contact.html">contact</a></li>
-      </ul>
-      <h2 class="menu-content__header">Palo Alto</h2>
-      <p class="menu-content__copyright">&copy; 2015 - Palo Alto. All Rights Reserved. Designed & Developed by <a class="menu__team" href="#">PixelBuddha Team</a> </p>
-      </div>
+        <div class="menu-content">
+            <ul class="menu-nav">
+                <li class="menu-nav__item"><a class="menu-nav__href" href="index.html">home</a></li>
+                <li class="menu-nav__item"><a class="menu-nav__href" href="about.html">about</a></li>
+                <li class="menu-nav__item"><a class="menu-nav__href" href="#">archive</a></li>
+                <li class="menu-nav__item"><a class="menu-nav__href" href="contact.html">contact</a></li>
+            </ul>
+            <h2 class="menu-content__header">Palo Alto</h2>
+            <p class="menu-content__copyright">&copy; 2015 - Palo Alto. All Rights Reserved. Designed & Developed by <a class="menu__team" href="#">PixelBuddha Team</a> </p>
+        </div>
 
     </div>
     <header class="header">
-		<span class="logo">
+        <span class="logo">
 			<a class="logo__ref" href="index.html"><img src="./image/header/logo.png" alt="logotype" width="157" height="33"></a>
         </span>
         <nav class="nav">
             <ul class="navigation">
-				<li class="navigation__item  navigation__ref_theme_black"><a class="navigation__ref navigation__ref_theme_black" href="index.html">home</a></li>
+                <li class="navigation__item  navigation__ref_theme_black"><a class="navigation__ref navigation__ref_theme_black" href="index.html">home</a></li>
                 <li class="navigation__item"><a class="navigation__ref navigation__ref_theme_black" href="about.html">about</a></li>
                 <li class="navigation__item"><a class="navigation__ref navigation__ref_theme_black" href="#">archive</a></li>
                 <li class="navigation__item"><a class="navigation__ref navigation__ref_theme_black" href="contact.html">contact</a></li>
@@ -52,33 +54,34 @@
         </div>
     </header>
 
-          {% block main %}
-          {% endblock %}
+    {% block main %} {% endblock %}
 
     <footer class="footer">
         <div class="footer-content">
             <h1 class="footer-heder"> <a class="footer-header__ref" href="./index.html">Palo Alto</a></h1>
-        <div class="footer-nav">
-            <ul class="navigation">
-                <li class="navigation__item"><a class="navigation__ref navigation__ref_theme_white" href="index.html">home</a></li>
-                <li class="navigation__item"><a class="navigation__ref navigation__ref_theme_white" href="about.html">about</a></li>
-                <li class="navigation__item"><a class="navigation__ref navigation__ref_theme_white" href="#">archive</a></li>
-                <li class="navigation__item"><a class="navigation__ref navigation__ref_theme_white" href="contact.html">contact</a></li>
-                <li class="navigation__item"><a class="navigation__search-f navigation__ref_theme_white" href="#"><em class="fa fa-search"></em></a></li>
-            </ul>
+            <div class="footer-nav">
+                <ul class="navigation">
+                    <li class="navigation__item"><a class="navigation__ref navigation__ref_theme_white" href="index.html">home</a></li>
+                    <li class="navigation__item"><a class="navigation__ref navigation__ref_theme_white" href="about.html">about</a></li>
+                    <li class="navigation__item"><a class="navigation__ref navigation__ref_theme_white" href="#">archive</a></li>
+                    <li class="navigation__item"><a class="navigation__ref navigation__ref_theme_white" href="contact.html">contact</a></li>
+                    <li class="navigation__item"><a class="navigation__search-f navigation__ref_theme_white" href="#"><em class="fa fa-search"></em></a></li>
+                </ul>
+            </div>
+            <div class="footer__text">Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor.</div>
+            <div class="footer__copyright">&copy; 2015 - Palo Alto. All Rights Reserved. Designed & Developed by <a class="team-name" href="#">PixelBuddha Team</a> </div>
+            <div class="share-icons">
+                <span><a class="share-icons__item" href="#"><em class="fa fa-facebook-square fa-lg"></em></a></span>
+                <span><a class="share-icons__item" href="#"><em class="fa fa-twitter fa-lg"></em></a></span>
+                <span><a class="share-icons__item" href="#"><em class="fa fa-instagram fa-lg"></em></a></span>
+                <span><a class="share-icons__item" href="#"><em class="fa fa-pinterest fa-lg"></em></a></span>
+            </div>
         </div>
-        <div class="footer__text">Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor.</div>
-        <div class="footer__copyright">&copy; 2015 - Palo Alto. All Rights Reserved. Designed & Developed by <a class="team-name" href="#">PixelBuddha Team</a> </div>
-        <div class="share-icons">
-            <span><a class="share-icons__item" href="#"><em class="fa fa-facebook-square fa-lg"></em></a></span>
-            <span><a class="share-icons__item" href="#"><em class="fa fa-twitter fa-lg"></em></a></span>
-            <span><a class="share-icons__item" href="#"><em class="fa fa-instagram fa-lg"></em></a></span>
-            <span><a class="share-icons__item" href="#"><em class="fa fa-pinterest fa-lg"></em></a></span>
-          </div>
-        </div>
-  </footer>
+    </footer>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="http://mozilla.github.io/nunjucks/files/nunjucks.min.js"></script>
     <script src="./scripts/scripts.js"></script>
-  </body>
-</html>
+    <script src="./vendor/vendor.js"></script>
+</body>
+< /html>
