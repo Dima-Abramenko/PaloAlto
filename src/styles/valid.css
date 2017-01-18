@@ -1,4 +1,8 @@
-.error-firstname {
+.error-firstname,
+.error-lastname,
+.error-mail,
+.error-phone,
+.error-date {
     font-family: 'Lato', sans-serif;
     font-size: 15px;
     color: red;
@@ -8,6 +12,8 @@
     border-color: red;
 }
 
+
+/*
 .error-lastname {
     font-family: 'Lato', sans-serif;
     font-size: 15px;
@@ -31,3 +37,4 @@
     font-size: 15px;
     color: red;
 }
+*/

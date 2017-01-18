@@ -1,29 +1,30 @@
 {% for item in articles %}
 <article class="article">
-  <div class="article__image">
-      <!--<img src="{{mainimage}}">-->
-  </div>
-  <div class="content">
-    <span>
+    <div class="article__image">
+        {% if item.hasimage %}
+        <img src="{{mainimage}}"> {% endif %}
+    </div>
+    <div class="content">
+        <span>
         <a class="content__i-do-ref" href="#">I Do Travel</a>
     </span>
-    <div class="content__date">{{item.date}}</div>
-    <h1 class="content__header">{{item.header}}</h1>
-    <hr class="content__hr">
-    <div class="content__aside-image">
-      <img src="{{item.asideimage}}">
+        <div class="content__date">{{item.date}}</div>
+        <h1 class="content__header">{{item.header}}</h1>
+        <hr class="content__hr">
+        <div class="content__aside-image">
+            <img src="{{item.asideimage}}">
+        </div>
+        <div class="content__text content__text_theme_italic">{{item.paragraph1}}</div>
+        <div class="content__text content__text_theme_simple">{{item.paragraph2}}</div>
+        <div class="content__text content__text_theme_simple">{{item.paragraph3}}</div>
+        <div class="content__text content__text_theme_blockquote">{{item.paragraph4}}</div>
+        <div class="content__text content__text_theme_simple">{{item.paragraph5}}</div>
+        <span><a class="content__read-more-ref" href="#">read more</a></span>
+        <ul class="hashtags">
+            <li class="hashtags__item"><a class="hashtags__item-ref" href="#">{{item.hashtags[0]}}</a></li>
+            <li class="hashtags__item"><a class="hashtags__item-ref" href="#">{{item.hashtags[1]}}</a></li>
+            <li class="hashtags__item"><a class="hashtags__item-ref" href="#">{{item.hashtags[2]}}</a></li>
+        </ul>
     </div>
-    <div class="content__text content__text_theme_italic">{{item.paragraph1}}</div>
-    <div class="content__text content__text_theme_simple">{{item.paragraph2}}</div>
-    <div class="content__text content__text_theme_simple">{{item.paragraph3}}</div>
-    <div class="content__text content__text_theme_blockquote">{{item.paragraph4}}</div>
-    <div class="content__text content__text_theme_simple">{{item.paragraph5}}</div>
-    <span><a class="content__read-more-ref" href="#">read more</a></span>
-    <ul class="hashtags">
-      <li class="hashtags__item"><a class="hashtags__item-ref" href="#">{{item.hashtags[0]}}</a></li>
-      <li class="hashtags__item"><a class="hashtags__item-ref" href="#">{{item.hashtags[1]}}</a></li>
-      <li class="hashtags__item"><a class="hashtags__item-ref" href="#">{{item.hashtags[2]}}</a></li>
-    </ul>
-  </div>
 </article>
 {% endfor %}

@@ -8,7 +8,7 @@
 .form-about__input {
     font-family: 'Lato', sans-serif;
     font-size: 20px;
-    color: rgba(51, 51, 51, 0.3);
+    color: rgba(51, 51, 51, 1);
     font-weight: 400;
     background-color: #f7f9fc;
     padding-top: 15px;
@@ -35,12 +35,4 @@
     font-weight: 700;
     padding: 15px;
     text-transform: uppercase;
-}
-
-.error input {
-    border: 1px solid red;
-}
-
-.error {
-    color: red;
 }
