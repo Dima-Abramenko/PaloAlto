@@ -1,7 +1,6 @@
 {
     "success": true,
     "articles": [{
-        "hasimage": "false",
         "mainimage": "",
         "buttonIdo": "I Do Travel",
         "date": "sep 20",
@@ -17,7 +16,6 @@
             "#Yosemite", "#Peak", "#Explorer"
         ]
     }, {
-        "hasimage": "true",
         "mainimage": "./image/body/img.jpeg",
         "buttonIdo": "I Do Observe",
         "date": "sep 18",
@@ -33,7 +31,6 @@
             "#Yosemite", "#Peak", "#Photo"
         ]
     }, {
-        "hasimage": "false",
         "mainimage": "",
         "buttonIdo": "I Do Reflect",
         "date": "sep 11",
